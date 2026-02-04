@@ -33,3 +33,16 @@ In the code below, if the fail counter equals one, then the roll number and name
 The below line of code feeds the marks.txt into the while loop line by line:
 
 <code>done < marks.txt</code>
+
+The final two lines gives the total number of students who failed one subject and the total number of students who passed all subjects:
+
+<code>echo "Count failed in exactly one subject: $fail_one"
+echo "Count passed in all subjects: $pass_all"</code>
+
+The output I acquired when I ran the following commands:
+
+<em>chmod +x validate_results.sh</em>
+
+<em>./validate_results.sh marks.txt</em>
+
+<img width="882" height="670" alt="Screenshot (764)" src="https://github.com/user-attachments/assets/90d2b86d-8289-4eef-8edb-846172fcaf46" />
