@@ -1,0 +1,15 @@
+101 Alice 45 30 67
+102 Bob 33 33 33
+103 Charlie 20 40 50
+104 Tony 80 80 80
+105 Banner 80 80 80
+106 Sabrina 37 39 45
+107 Taylor 57 64 73
+108 Loki 78 79 77
+109 Peter 79 80 78
+110 Natasha 57 58 65
+111 Hulk 23 35 34
+112 Chris 46 32 37
+113 Steve 31 66 68
+114 Harry 46 41 22
+115 Max 57 68 70
