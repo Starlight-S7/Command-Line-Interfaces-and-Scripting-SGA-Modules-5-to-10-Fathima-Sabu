@@ -28,6 +28,8 @@ The fourth block is used to find the last ERROR message shown:
 
 <code>last_error=$(grep " ERROR " "$1" | tail -1)</code>
 
+"tail -1" is used to find the most recent one, the most ERROR message in this context.
+
 The fifth block is to create the report file:
 
 <code>date=$(date +%Y-%m-%d)
@@ -43,7 +45,7 @@ echo "ERROR messages: $error" >> "$report"
 echo "Most recent ERROR:" >> "$report"
 echo "$last_error" >> "$report"</code>
 
-The command echo is used to print the info, ">" used to create the file with the first line printed, and ">>" adds to the file. Using ">" after creating the file will overwrite any data that's already in it
+The command echo is used to print the info, ">" used to create the file with the first line printed, and ">>" adds to the file. Using ">" after creating the file will overwrite any data that's already in it.
 
 And then the final line of script is to show the report that was created:
 
