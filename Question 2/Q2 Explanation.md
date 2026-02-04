@@ -33,7 +33,7 @@ The fifth block is to create the report file:
 <code>date=$(date +%Y-%m-%d)
 report="logsummary_$date.txt"</code>
 
-The sixth block is to write all of the required data into report file:
+The sixth block is to write all of the required data into the report file:
 
 <code>echo "Log Summary Report - $date" > "$report"
 echo "Total entries: $total" >> "$report"
@@ -42,6 +42,8 @@ echo "WARNING messages: $warning" >> "$report"
 echo "ERROR messages: $error" >> "$report"
 echo "Most recent ERROR:" >> "$report"
 echo "$last_error" >> "$report"</code>
+
+The command echo is used to print the info, ">" used to create the file with the first line printed, and ">>" adds to the file. Using ">" after creating the file will overwrite any data that's already in it
 
 And then the final line of script is to show the report that was created:
 
