@@ -1,4 +1,4 @@
-<img width="1920" height="1019" alt="Screenshot (782)" src="https://github.com/user-attachments/assets/6c966627-7e7b-4bef-b0d8-ac4e6a54e791" /><h1>Answer 7 Explanation</h1>
+<h1>Answer 7 Explanation</h1>
 Question 7 folder contains the shell script "patterns.sh" and the text file "lyrics.txt" I created to demonstrate this assignment question. I've also copied and pasted the mixed.txt file that was created after I executed the shell script, since it was too long to capture on screenshot.
 
 <h3>The shell script command explanation</h3>
