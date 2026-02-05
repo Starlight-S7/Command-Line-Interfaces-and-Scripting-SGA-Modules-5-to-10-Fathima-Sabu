@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <signal.h>
 
-/* Signal handlers */
+// Signal handlers
 void handle_sigterm(int sig) {
     printf("\nReceived SIGTERM. Performing cleanup...\n");
 }
@@ -16,11 +16,11 @@ void handle_sigint(int sig) {
 int main() {
     pid_t pid1, pid2;
 
-    /* Register signal handlers */
+    // Register signal handlers
     signal(SIGTERM, handle_sigterm);
     signal(SIGINT, handle_sigint);
 
-    /* First child sends SIGTERM after 5 seconds */
+    // First child sends SIGTERM after 5 seconds
     pid1 = fork();
     if (pid1 == 0) {
         sleep(5);
@@ -28,7 +28,7 @@ int main() {
         exit(0);
     }
 
-    /* Second child sends SIGINT after 10 seconds */
+    // Second child sends SIGINT after 10 seconds
     pid2 = fork();
     if (pid2 == 0) {
         sleep(10);
@@ -36,7 +36,7 @@ int main() {
         exit(0);
     }
 
-    /* Parent runs indefinitely */
+    // Parent runs indefinitely
     while (1) {
         pause();  // Wait for signals
     }
